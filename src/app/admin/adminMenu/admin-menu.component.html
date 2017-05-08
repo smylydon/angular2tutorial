@@ -1,1 +1,17 @@
-<h1>Admin Menu Page</h1>
+<div class="top-bar">
+  <div class="top-bar-title">GGC Admin Area</div>
+
+  <div class="top-bar-left">
+    <ul class="menu">
+      <li class="admin-menu"><a href="#">One</a></li>
+      <li class="admin-menu"><a href="#">Two</a></li>
+    </ul>
+  </div>
+
+  <div *ngIf="theUser" class="top-bar-right">
+    <ul class="menu">
+      <li class="admin-menu"><a href="#" (click)="logout()">Logout</a></li>
+      <li class="admin-menu"><a href="#">{{theUser}} Loggen In</a></li>
+    </ul>
+  </div>
+</div>
